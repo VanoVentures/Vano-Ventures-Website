@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Vano Ventures Official Logo Mark -->
+  <defs>
+    <linearGradient id="vano_accent_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="vano_cyan_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Rounded Container -->
+  <rect width="48" height="48" rx="12" fill="#0f172a" />
+  <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="11.25" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Dynamic Geometric 'V' -->
+  <path d="M12 14L24 35L36 14" stroke="url(#vano_accent_grad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M24 35L36 14" stroke="url(#vano_cyan_grad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Precision Accent Dot -->
+  <circle cx="37" cy="35" r="3" fill="#38bdf8" />
+</svg>

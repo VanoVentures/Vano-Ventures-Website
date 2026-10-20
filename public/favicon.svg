@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- VANO VENTURES [VANO_FAVICON] -->
+  <defs>
+    <linearGradient id="vano_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#030712" />
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#1e293b" stroke-width="2" />
+  <path d="M18 20L32 46L46 20" stroke="url(#vano_grad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="48" cy="46" r="4" fill="#38bdf8" />
+</svg>
