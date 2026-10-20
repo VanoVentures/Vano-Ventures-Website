@@ -200,8 +200,19 @@ export const Footer: React.FC = () => {
 
         {/* Legal & Bottom Footer */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <div>
-            © 2026 {siteConfig.brand.name}. All rights reserved.
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+            <span>© 2026 {siteConfig.brand.name}. All rights reserved.</span>
+            <span className="text-slate-700">•</span>
+            <a
+              href={siteConfig.brand.founderPortfolioUrl || "https://sreerampalani.vercel.app"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-blue-400 transition-colors inline-flex items-center gap-1"
+              aria-label="Founder Portfolio (opens in a new tab)"
+            >
+              <span>Founder Portfolio</span>
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <div className="flex items-center gap-6">

@@ -24,6 +24,7 @@ export interface SiteConfig {
     logoUrl?: string;
     faviconUrl?: string;
     ogImageUrl?: string;
+    founderPortfolioUrl?: string;
   };
   siteUrl: string;
   contact: {
@@ -59,13 +60,14 @@ export const siteConfig: SiteConfig = {
     logoUrl: env.VITE_VANO_LOGO || "/assets/vano-logo.svg",
     faviconUrl: env.VITE_VANO_FAVICON || "/favicon.svg",
     ogImageUrl: env.VITE_VANO_OG_IMAGE || "/og-image.png",
+    founderPortfolioUrl: env.VITE_FOUNDER_PORTFOLIO_URL || "https://sreerampalani.vercel.app",
   },
 
-  siteUrl: env.VITE_SITE_URL || "https://vanoventures.com",
+  siteUrl: env.VITE_SITE_URL || "https://vanoventures.vercel.app",
 
   contact: {
-    email: env.VITE_CONTACT_EMAIL || "contact@vanoventures.com",
-    whatsappNumber: env.VITE_WHATSAPP_NUMBER || "919876543210",
+    email: env.VITE_CONTACT_EMAIL || "vanoventures26@gmail.com",
+    whatsappNumber: env.VITE_WHATSAPP_NUMBER || "918270263531",
     whatsappDisplay: env.VITE_WHATSAPP_DISPLAY || "+91 (WhatsApp Business)",
   },
 

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://vanoventures.com/sitemap.xml
+Sitemap: https://vanoventures.vercel.app/sitemap.xml
