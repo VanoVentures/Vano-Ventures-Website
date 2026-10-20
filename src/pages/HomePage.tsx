@@ -13,8 +13,6 @@ import {
   Globe,
   Search,
   Share2,
-  ShieldCheck,
-  CheckCircle2,
   Cpu,
   Target,
   Rocket,
@@ -38,106 +36,56 @@ export const HomePage: React.FC = () => {
           aria-hidden="true"
         />
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Column: Headline and Positioning */}
-            <div className="lg:col-span-7 flex flex-col items-start text-left">
-              <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-bold tracking-widest uppercase mb-6 shadow-sm">
-                <span className="h-2 w-2 rounded-full bg-blue-400" />
-                <span>VANO VENTURES</span>
-              </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
+          {/* Brand Eyebrow Badge */}
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-bold tracking-widest uppercase mb-6 shadow-sm">
+            <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
+            <span>VANO VENTURES</span>
+          </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-6">
-                Digital solutions for{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300">
-                  growing businesses.
-                </span>
-              </h1>
+          {/* Main Headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.14] mb-6 max-w-3xl">
+            Your Vision.{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300">
+              Our Digital Solutions.
+            </span>
+          </h1>
 
-              <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mb-8">
-                We build modern websites and help businesses strengthen their digital presence online.
-              </p>
+          {/* Subtitle */}
+          <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mb-10">
+            From ideas to online experiences, we help you bring your vision to life through modern websites and practical digital solutions.
+          </p>
 
-              <div className="flex flex-wrap items-center gap-4 mb-8 w-full sm:w-auto">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  icon={<ArrowRight className="w-4 h-4" />}
-                  onClick={() => handleStartProject('hero')}
-                  className="w-full sm:w-auto"
-                >
-                  Start a Project
-                </Button>
+          {/* Action CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 w-full sm:w-auto">
+            <Button
+              variant="primary"
+              size="lg"
+              icon={<ArrowRight className="w-4 h-4" />}
+              onClick={() => handleStartProject('hero')}
+              className="w-full sm:w-auto justify-center shadow-lg shadow-blue-600/20"
+            >
+              Start a Project
+            </Button>
 
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  href="/work"
-                  className="w-full sm:w-auto"
-                >
-                  View Our Work
-                </Button>
-              </div>
+            <Button
+              variant="secondary"
+              size="lg"
+              href="/work"
+              className="w-full sm:w-auto justify-center"
+            >
+              View Our Work
+            </Button>
+          </div>
 
-              <div className="pt-4 border-t border-slate-800/80 flex items-center gap-2 text-sm text-slate-400">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                <span>Web • Digital Presence • Practical Solutions</span>
-              </div>
-            </div>
-
-            {/* Right Column: Clean, understated browser mockup */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative mx-auto max-w-md lg:max-w-none">
-                <div className="rounded-xl border border-slate-800 bg-slate-900/90 shadow-2xl backdrop-blur-sm overflow-hidden">
-                  {/* Browser Bar */}
-                  <div className="flex items-center justify-between px-4 py-2.5 bg-slate-950 border-b border-slate-800/80 text-xs text-slate-400">
-                    <div className="flex items-center gap-1.5">
-                      <div className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-0.5 rounded bg-slate-900 border border-slate-800 text-[11px] text-slate-300 font-mono">
-                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>your-business.com</span>
-                    </div>
-                    <div className="w-6" />
-                  </div>
-
-                  {/* Clean Content Frame */}
-                  <div className="p-5 space-y-4">
-                    <div className="rounded-lg bg-slate-950/60 p-4 border border-slate-800 space-y-2.5">
-                      <div className="h-2 w-14 bg-blue-400/70 rounded-full" />
-                      <div className="h-4 w-3/4 bg-slate-200 rounded" />
-                      <div className="h-2.5 w-1/2 bg-slate-400/50 rounded" />
-                      <div className="pt-2 flex gap-2">
-                        <div className="h-6 w-20 bg-blue-600 rounded flex items-center justify-center text-[10px] text-white font-medium">
-                          Contact
-                        </div>
-                        <div className="h-6 w-16 bg-slate-800 rounded" />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2.5">
-                      <div className="p-3 rounded-lg bg-slate-950/50 border border-slate-800">
-                        <div className="h-2 w-12 bg-slate-400/70 rounded mb-1.5" />
-                        <div className="h-1.5 w-full bg-slate-600/40 rounded" />
-                      </div>
-                      <div className="p-3 rounded-lg bg-slate-950/50 border border-slate-800">
-                        <div className="h-2 w-12 bg-slate-400/70 rounded mb-1.5" />
-                        <div className="h-1.5 w-full bg-slate-600/40 rounded" />
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-slate-800/60">
-                      <span className="flex items-center gap-1 text-emerald-400 font-medium">
-                        <CheckCircle2 className="w-3.5 h-3.5" /> Fast & Responsive
-                      </span>
-                      <span className="text-slate-400 font-mono text-[10px]">Production Quality</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* Core Pillars Strip */}
+          <div className="inline-flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate-400 px-5 py-2.5 rounded-full bg-slate-900/60 border border-slate-800 backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            <span className="text-slate-200 font-medium">Web Development</span>
+            <span className="text-slate-600 font-bold">•</span>
+            <span className="text-slate-200 font-medium">Digital Presence</span>
+            <span className="text-slate-600 font-bold">•</span>
+            <span className="text-slate-200 font-medium">Practical Solutions</span>
           </div>
         </div>
       </section>
